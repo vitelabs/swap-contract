@@ -1,0 +1,32 @@
+{
+  "name": "vitecontract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vitelabs/ViteContract.git"
+  },
+  "keywords": [
+    "vite",
+    "contract"
+  ],
+  "author": "vite-pu",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/vitelabs/ViteContract/issues"
+  },
+  "homepage": "https://github.com/vitelabs/ViteContract#readme",
+  "dependencies": {
+    "bignumber.js": "^7.2.1",
+    "es6-promisify": "^6.0.0",
+    "lodash": "^4.17.10",
+    "web3": "^0.18.2"
+  }
+}
