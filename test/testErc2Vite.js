@@ -85,9 +85,14 @@ contract('Erc2Vite full test', async (accounts) => {
     });
 
     it('get vite address', async () => {
-      const viteAddr = await erc2vite.getViteAddr(sender, {from:sender});
+      const viteAddr = await erc2vite.records.call(sender);
       console.log('vite address', viteAddr);
     });
+
+    // it('get vite address', async () => {
+    //   const viteAddr = await erc2vite.getViteAddr(sender, {from:sender});
+    //   console.log('vite address', viteAddr);
+    // });
 
     it('call bind method again', async () => {
       await viteToken.transfer(sender, web3.toWei(200000), {from: owner});
@@ -106,10 +111,10 @@ contract('Erc2Vite full test', async (accounts) => {
       console.log('balanceAfter:', balanceAfter);
     });
 
-    it('get vite address again', async () => {
-      const viteAddr = await erc2vite.getViteAddr(sender, {from:sender});
-      console.log('vite address', viteAddr);
-    });
+    // it('get vite address again', async () => {
+    //   const viteAddr = await erc2vite.getViteAddr(sender, {from:sender});
+    //   console.log('vite address', viteAddr);
+    // });
 
     it('watch event again', async () => {
       const bindEvent = await erc2vite.Bind();

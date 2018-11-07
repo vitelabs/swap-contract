@@ -99,10 +99,6 @@ contract Erc2Vite {
         );
     }
     
-    function getViteAddr(address _ethAddr) public view returns (string) {
-        return records[_ethAddr];
-    }
-    
     function () public payable {
         revert();
     }
