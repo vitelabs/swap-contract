@@ -90,7 +90,7 @@ contract Erc2Vite {
             _invitationCode = defaultCode;
         }
         
-        Bind(
+        emit Bind(
             bindId++,
             msg.sender,
             _viteAddr,
