@@ -77,6 +77,8 @@ contract Erc2Vite {
 	}
     
     function bind(string _viteAddr, uint256 _invitationCode) public {
+
+        require(bytes(_viteAddr).length == 55);
         
         var viteToken = Token(viteTokenAddress);
         uint256 apprAmount = viteToken.allowance(msg.sender, address(this));
